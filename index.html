@@ -1,3 +1,5 @@
+<!-- Sources Used: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+                   https://www.w3schools.com/tags/default.asp -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,50 +13,64 @@
 </head>
 
 <body>
-    <div class="body_container">
-        <header>
-            <h1 id="Welcome">Welcome to Peony Lum's User Page</h1>
-            <p>ucsd student &middot; computer science &middot; ui/ux design</p>
-            <hr>
-            <nav>
-                <strong>Section Breakdown</strong>
-                <ul>
-                    <li><a href="#Intro">Take me to the <i>Intro</i> Section!</a></li>
-                    <li><a href="#Why_CS">Take me to the <i>Why CS</i> Section!</a></li>
-                    <li><a href="#Fav_Courses">Take me to the <i>Favorite Courses</i> Section!</a></li>
-                    <li><a href="#Skillset">Take me to the <i>Experience vs. Programming Language</i> Section!</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <h1 id="Welcome">Welcome to Peony Lum's User Page</h1>
+        <p>ucsd student &middot; computer science &middot; ui/ux design <br />
+            Contact Me At: pslum@ucsd.edu
+        </p>
         <hr>
-        <main>
-            <div class="About_me">
-                <section id="Intro">
-                    <h2>Who Am I?</h2>
-                    <!-- Source Used for picture tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
-                    <picture>
-                        <source srcset="Images/Peony_Image.JPG" media="(min-width: 900px)">
-                        <img src="Images/Power_Puff.PNG" alt="Image of Bubbles(Powerpuff Girls)" />
-                    </picture>
-                    <p>I am currently a third year student at <span class="key_point">UCSD</span>, majoring in <span
-                            class="key_point">Computer<br />
-                            Science</span>and minoring in <span class="key_point">Design</span>. I am most interested in
-                        <span class="key_point">UI/UX Design <br />
-                            and Frontend Development </span>, though I really want to learn about all types <br />
-                        of <span class="key_point">cutting-edge technology</span>. On my free time, I enjoy <span
-                            class="key_point">drawing, painting, <br />
-                            and art in general</span>.
-                    </p>
-                    <iframe src="https://www.google.com/maps/d/edit?mid=1LaLGx1WZy3mEfyoxdEWLydJYaad0k8Nf&usp=sharing"
-                        title="Peony's Life Map">
-                    </iframe>
-                    <h3 id="Fun_Facts">Some Fun Facts About Me</h3>
-                    <ul>
-                        <li>My least favorite programming language is <b>C</b></li> <br />
-                        <li>My hometown is <b>San Francisco</b></li> <br />
-                        <li>A piece of code that I live by:</li> <br />
-                        <pre>
+        <nav>
+            <strong>Section Breakdown</strong>
+            <ul>
+                <li><a href="#Intro">Take me to the <i>Who Am I?</i> Section!</a></li>
+                <li><a href="#Why_CS">Take me to the <i>Why CS</i> Section!</a></li>
+                <li><a href="#Skillset">Take me to the <i>Experience vs. Programming Language</i> Section!</a></li>
+                <li><a href="#L_Fav_Courses">Take me to the <i>Least Favorite Courses</i> Section!</a></li>
+                <li><a href="#Form_Quiz">Take me to the <i>Quiz</i> Section!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Before We Get Started...</h2>
+        <button type="button">Press Me if You're Ready to Learn About Me!</button>
+        <button type="button">Press Me if You'd Rather <b>NOT</b> Learn About Me!</button>
+        <br />
+        <template>
+            <strong>WHY WOULD YOU NOT WANT TO LEARN ABOUT ME?!</strong>
+            <br />
+            <img src="Images/Angry_Tenzin.JPG" alt="Angry Tenzin" />
+        </template>
+        <section id="Intro">
+            <h2>Who Am I?</h2>
+            <!-- Source Used for picture tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
+            <picture>
+                <source srcset="Images/Peony_Image.JPG" media="(min-width: 900px)">
+                <img src="Images/Power_Puff.PNG" alt="Image of Bubbles(Powerpuff Girls)" />
+            </picture>
+            <p>I am currently a third year student at <span class="key_point">UCSD</span>, majoring in <span
+                    class="key_point">Computer<br />
+                    Science</span>and minoring in <span class="key_point">Design</span>. I am most interested in
+                <span class="key_point">UI/UX Design <br />
+                    and Frontend Development </span>, though I really want to learn about all types <br />
+                of <span class="key_point">cutting-edge technology</span>. On my free time, I enjoy <span
+                    class="key_point">drawing, painting, <br />
+                    and art in general</span>.
+            </p>
+            <div class="Life_Map">
+                <h3>Take a Look at Some of My Special Places</h3>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LaLGx1WZy3mEfyoxdEWLydJYaad0k8Nf" width="500"
+                    height="340" title="Peony's Life Map">
+                </iframe>
+            </div>
+            <div class="PL_Facts">
+                <h3>Some Fun Facts About Me</h3>
+                <ul>
+                    <li>My least favorite programming language is <b>C</b></li> <br />
+                    <li>My hometown is <b>San Francisco</b></li> <br />
+                    <li>I was born in <b>June 2000</b></li> <br />
+                    <li>A piece of code that I live by:</li> <br />
+                    <pre>
                         <code>
                             while(noSuccess) { <br/>
                                 tryAgain(); <br/>
@@ -64,128 +80,253 @@
                             }
                         </code>
                     </pre>
-                    </ul>
-                    <h3 id="Pics_Summary">A Summary of Me in Pictures</h3>
-                    <figure>
-                        <img src="Images/alien_assist.jpg" alt="Alien Assisting" />
-                        <figcaption>Fig 1: One of my dominant personalities</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="Images/alien_grocery.jpg" alt="Alien Grocery Shopping" />
-                        <figcaption>Fig 2: Me doing anything in life that requires energy</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="Images/alien_life.jpeg" alt="Alien Confused on Life" />
-                        <figcaption>Fig 3: My only brain cell</figcaption>
-                    </figure>
-                    <br />
-                    <strong>Disclaimer: I swear I am much more than these 3 photos!
-                        <br />
-                        Learn more about me by checking out
-                        <a href="https://www.linkedin.com/in/peony-lum/"> my LinkedIn Profile</a>
-                    </strong>
-                </section>
-                <hr>
-                <section id="Why_CS">
-                    <h2>Why Computer Science?</h2>
-                    <p>When I was a Senior in High School, I took AP Computer Science, and while I <br />
-                        was not great at programming then, I was intrigued by the concept of programming <br />
-                        and creating software. I was incredibly hesitant to choose to major in Computer <br />
-                        Science, and instead almost majored in Biology. Yet, the excitement I would get <br />
-                        when seeing my code compile and run successfully was too much to ignore. <br />
-                        <br />
-                        Ever since I have learned more in-depth concepts and practices about Computer Science <br />
-                        here at UCSD, I have developed a vague sense of what I want to do as a career. Though <br />
-                        I have grown a liking to UI/UX Design and frontend development, I still want to learn <br />
-                        more about backend development and API development. It would be a great honor to become <br />
-                        a full-stack developer eventually.
-                    </p>
-                    <aside>
-                        <strong>Imagine If I had become a Biology Major instead!</strong>
-                    </aside>
-                </section>
-                <hr>
-                <section id="Skillset">
-                    <h2>My Experience with Different Programming Languages</h2>
-                    <!--Source Used for table tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col -->
-                    <table>
-                        <caption>Programming Languages vs. Experience</caption>
-                        <colgroup>
-                            <col span="1" class="Novice">
-                            <col span="1" class="Intermediate">
-                            <col span="1" class="Advanced">
-                        </colgroup>
-                        <tr>
-                            <th scope="col">Novice</th>
-                            <th scope="col">Intermediate</th>
-                            <th scope="col">Advanced</th>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Javascript</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                            <td>C++</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>Java</td>
-                        </tr>
-                    </table>
-                </section>
-                <hr>
-                <section id="Fav_Courses">
-                    <h2>My Least Favorite Courses I Have Taken So Far at UCSD</h2>
-                    <ol>
-                        <li>CSE 20</li>
-                        <i>&middot; This course was very difficult to me! I wasn't even sure what discrete
-                            math was at the time!
-                        </i>
-                        <li>CHEM 6A</li>
-                        <i>&middot; I am not a Chemistry major for a reason! I was very bad at this class
-                            and am so glad I only have to take one chem class!
-                        </i>
-                        <li>CSE 101</li>
-                        <i>&middot; Though this course is essential (Algorithms), it was remote and
-                            made the course even more difficult!
-                        </i>
-                    </ol>
-                </section>
+                </ul>
             </div>
-        </main>
+            <div class="Pic_Summary">
+                <h3>A Summary of Me in Pictures</h3>
+                <figure>
+                    <img src="Images/alien_assist.jpg" alt="Alien Assisting" />
+                    <figcaption>Fig 1: One of my dominant personalities</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/alien_grocery.jpg" alt="Alien Grocery Shopping" />
+                    <figcaption>Fig 2: Me doing anything in life that requires energy</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/alien_life.jpeg" alt="Alien Confused on Life" />
+                    <figcaption>Fig 3: My only brain cell</figcaption>
+                </figure>
+                <br />
+                <strong>Disclaimer: I swear I am much more than these 3 photos!
+                    <br />
+                    Learn more about me by checking out
+                    <a href="https://www.linkedin.com/in/peony-lum/"> my LinkedIn Profile</a>
+                </strong>
+            </div>
+            <div class="Media">
+                <h3>Check Out One of My Favorite Songs</h3>
+                <!-- Source Used for audio tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio -->
+                <figure>
+                    <figcaption>This song is called <i>Rest of My Life</i> by Bruno Mars</figcaption>
+                    <audio controls>
+                        <source src="Audio/Song.mp3">
+                        Sorry, it looks like your browser will not allow you to listen to this song!
+                    </audio>
+                </figure>
+                <h3>Enjoy this video of one of my Favorite Humans in the World</h3>
+                <!-- Source Used for video tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video-->
+                <video controls width="250">
+                    <source src="Video/Harry_S.mp4" type="video/mp4">
+                    Sorry, it looks like your browser will not allow you to see Harry Styles!
+                </video>
+                <h3>A Random Canvas that depicts the blankness in my mind</h3>
+                <canvas width="250" height="250">
+                    Sorry, the canvas cannot be displayed!
+                </canvas>
+                <h3>One of My Favorite Shapes In One of My Favorite Colors</h3>
+                <!-- Source Used for svg tag: https://www.w3schools.com/html/html5_svg.asp -->
+                <svg width="250" height="250">
+                    <circle cx="125" cy="125" r="75" fill="#B5D3E7" />
+                </svg>
+            </div>
+        </section>
         <hr>
-        <footer>
-            <div class="Site_info">
-                <em>This site was created by <b>Peony Lum</b> <b>in January, 2021</b>. If you enjoy this site and want
+        <section id="Why_CS">
+            <h2>Why Computer Science?</h2>
+            <p>When I was a Senior in High School, I took AP Computer Science, and while I <br />
+                was not great at programming then, I was intrigued by the concept of programming <br />
+                and creating software. I was incredibly hesitant to choose to major in Computer <br />
+                Science, and instead almost majored in Biology. Yet, the excitement I would get <br />
+                when seeing my code compile and run successfully was too much to ignore. <br />
+            </p>
+            <aside>
+                <strong>Imagine If I had become a Biology Major instead!</strong>
+            </aside>
+            <br />
+            <details>
+                <summary>My CS Adventure in College</summary>
+                Ever since I have learned more in-depth concepts and practices about Computer Science <br />
+                here at UCSD, I have developed a vague sense of what I want to do as a career. Though <br />
+                I have grown a liking to UI/UX Design and frontend development, I still want to learn <br />
+                more about backend development and API development. It would be a great honor to become <br />
+                a full-stack developer eventually.
+            </details>
+        </section>
+        <hr>
+        <section id="Skillset">
+            <h2>My Experience with Different Programming Languages</h2>
+            <!--Source Used for table tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col -->
+            <table>
+                <caption>Programming Languages vs. Experience</caption>
+                <colgroup>
+                    <col span="1" class="Novice">
+                    <col span="1" class="Intermediate">
+                    <col span="1" class="Advanced">
+                </colgroup>
+                <tr>
+                    <th scope="col">Novice</th>
+                    <th scope="col">Intermediate</th>
+                    <th scope="col">Advanced</th>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>C++</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Java</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section id="L_Fav_Courses">
+            <h2>My Least Favorite Courses I Have Taken So Far at UCSD</h2>
+            <ol>
+                <li>CSE 20</li>
+                <i>&middot; This course was very difficult to me! I wasn't even sure what discrete
+                    math was at the time!
+                </i>
+                <li>CHEM 6A</li>
+                <i>&middot; I am not a Chemistry major for a reason! I was very bad at this class
+                    and am so glad I only have to take one chem class!
+                </i>
+                <li>CSE 101</li>
+                <i>&middot; Though this course is essential (Algorithms), it was remote and
+                    made the course even more difficult!
+                </i>
+            </ol>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="Form_Quiz" id="Form_Quiz">
+            <h2>Think You Remember My Information? Let's Put You to the Test!</h2>
+            <form>
+                <fieldset>
+                    <legend>Section: Heading</legend>
+                    <label for="Name_Q">What is my name?</label>
+                    <input type="text" id="Name_Q" name="Name_Q" />
                     <br />
-                    to learn more about Peony, don't forget to check out her <a
-                        href="https://www.linkedin.com/in/peony-lum/">LinkedIn Profile</a>
-                    or her <a href="https://github.com/Peonylum">GitHub account</a>!
-                </em>
+                    <label for="Email_Q">What is my email address?</label>
+                    <input type="email" id="Email_Q" placeholder="someone@email.com">
+                    <br />
+                </fieldset>
                 <br />
+                <fieldset>
+                    <legend>Section: Who am I?</legend>
+                    <label for="School_Year">What year am I in College?</label>
+                    <input type="number" id="School_Year" name="School_Year" min="1" max="4" />
+                    <br />
+                    <label for="Locations">Which Location is considered special to me?</label>
+                    <input list="Loc_Options" id="Locations" name="Locations" />
+                    <datalist id="Loc_Options">
+                        <option value="Seattle"></option>
+                        <option value="Miami"></option>
+                        <option value="Boston"></option>
+                        <option value="New York City"></option>
+                    </datalist>
+                    <br />
+                    <label for="Birthday">When was I born?</label>
+                    <input type="month" id="Birthday" name="Birthday" min="1990-01" max="2005-12">
+                    <br />
+                    <label for="LinkedIn_URL">What is my LinkedIn URL?</label>
+                    <input type="url" id="LinkedIn_URL" name="LinkedIn_URL" placeholder="https://something.com" />
+                    <br />
+                    <label for="Fav_Celebrity">Who is one of my favorite humans in the world?</label>
+                    <select id="Fav_Celebrity">
+                        <option value="None">---</option>
+                        <optgroup label="Actors/Actresses">
+                            <option value="Robert Downey Jr.">Robert Downey Jr.</option>
+                            <option value="Octavia Spencer">Octavia Spencer</option>
+                            <option value="Gina Rodriguez">Gina Rodriguez</option>
+                        </optgroup>
+                        <optgroup label="Singers/Artists">
+                            <option value="Bruno Mars">Bruno Mars</option>
+                            <option value="Harry Styles">Harry Styles</option>
+                            <option value="Billie Eilish">Billie Eilish</option>
+                        </optgroup>
+                    </select>
+                    <br />
+                    <label for="Fav_Color">Select a Color that is similar to my favorite color:</label>
+                    <input type="color" id="Fav_Color" name="Fav_Color" value="#000000" />
+                    <br />
+                </fieldset>
                 <br />
-                <nav>
-                    <a href="#Welcome">
-                        <strong>Back to Top</strong>
-                    </a>
-                </nav>
-            </div>
-        </footer>
-    </div>
+                <fieldset>
+                    <legend>Section: Programming Language Experience</legend>
+                    <br />
+                    <p>Which Programming Language am I <b>Advanced</b> in?</p>
+                    <input type="radio" id="C" name="Lang" value="C">
+                    <label for="C">C</label>
+                    <input type="radio" id="C++" name="Lang" value="C++">
+                    <label for="C++">C++</label>
+                    <input type="radio" id="Java" name="Lang" value="Java">
+                    <label for="Java">Java</label>
+                    <input type="radio" id="Python" name="Lang" value="Python">
+                    <label for="Python">Python</label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Section: Least Favorite Courses at UCSD</legend>
+                    <p>Which of the following are a part of my least favorite classes at UCSD?</p>
+                    <input type="checkbox" id="CSE20" name="CSE20">
+                    <label for="CSE20">CSE20</label>
+                    <input type="checkbox" id="CSE8B" name="CSE8B">
+                    <label for="CSE8B">CSE8B</label>
+                    <input type="checkbox" id="CSE101" name="CSE101">
+                    <label for="CSE101">CSE101</label>
+                    <br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="Rate">How well did I do in displaying my information?</label>
+                    <br />
+                    <i>Assume this range is from 1-10</i>
+                    <br />
+                    <input type="range" id="Rate" name="Rate" min="1" max="10" />
+                    <br />
+                    <label for="Written_Feedback">Please let me know what I can improve on for my site:</label>
+                    <br />
+                    <textarea id="Written_Feedback" name="Written_Feedback" rows="6" cols="40"></textarea>
+                </fieldset>
+                <br />
+                <input type="submit" value="Submit Quiz" />
+            </form>
+            <br />
+        </div>
+        <em>This site was created by <b>Peony Lum</b> <b>in January, 2021</b>. If you enjoy this site and want
+            <br />
+            to learn more about Peony, don't forget to check out her <a
+                href="https://www.linkedin.com/in/peony-lum/">LinkedIn Profile</a>
+            or her <a href="https://github.com/Peonylum">GitHub account</a>!
+        </em>
+        <br />
+        <br />
+        <nav>
+            <a href="#Welcome">
+                <strong>Back to Top</strong>
+            </a>
+        </nav>
+    </footer>
 </body>
 
 </html>
