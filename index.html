@@ -1,59 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <title>
         Peony Lum's User Page
     </title>
+    <!-- Source Used for meta tag: https://www.w3schools.com/tags/tag_meta.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="blankFile.css" rel="stylesheet">
 </head>
 
 <body>
-    <main>
+    <div class="body_container">
         <header>
-        <h1>Welcome to Peony Lum's User Page</h1>
+            <h1 id="Welcome">Welcome to Peony Lum's User Page</h1>
             <p>ucsd student &middot; computer science &middot; ui/ux design</p>
+            <hr>
+            <nav>
+                <strong>Section Breakdown</strong>
+                <ul>
+                    <li><a href="#Intro">Take me to the <i>Intro</i> Section!</a></li>
+                    <li><a href="#Why_CS">Take me to the <i>Why CS</i> Section!</a></li>
+                    <li><a href="#Fav_Courses">Take me to the <i>Favorite Courses</i> Section!</a></li>
+                    <li><a href="#Skillset">Take me to the <i>Experience vs. Programming Language</i> Section!</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section>
-            <h2>Who Am I?</h2>
-            <p>I am currently a third year student at UCSD, majoring in Computer <br/>
-            Science and minoring in Design. I am most interested in UI/UX Design <br/>
-            and Frontend Development, though I really want to learn about all types <br/>
-            of cutting-edge technology. On my free time, I enjoy drawing, painting, <br/>
-            and art in general.</p>
-            <h3>Some Fun Facts About Me</h3>
-            <p> &middot; My least favorite programming language is C <br/>
-                &middot; My hometown is San Francisco <br/>
-                &middot; I love to paint, draw, and make arts & crafts
-                &middot; A piece of code that I live by: <br/>
-                <code>
-                    while(noSuccess) { <br/>
-                        tryAgain(); <br/>
-                        if(Dead) { <br/>
-                        break; <br/>
-                        } <br/>
-                    }
-                </code>
-            </p>
-            <h3>A Summary of Me in Pictures</h3>
-            <img src="Images/alien_assist.jpg" alt="Alien Assisting"/>
-            <img src="Images/alien_grocery.jpg" alt="Alien Grocery Shopping"/>
-            <img src="Images/alien_life.jpeg" alt="Alien Confused on Life"/> <br/>
-            <strong>Disclaimer: I swear I am much more than these 3 photos! <br/>
-                Learn more about me by checking out
-                <a href="https://www.linkedin.com/in/peony-lum/"> my LinkedIn Profile</a>
-            </strong>
-        </section>
-        <section>
-            <h2>Why Computer Science?</h2>
-            <p>When I was a Senior in High School, I took AP Computer Science, and while I <br/>
-                was not great at programming then, I was intrigued by the concept of programming <br/>
-                and creating software. I was incredibly hesitant to choose to major in Computer <br/>
-                Science, and instead almost majored in Biology. Yet, the excitement I would get <br/>
-                when seeing my code compile and run successfully was too much to ignore. I am now <br/>
-                dreaming of the day that I can call myself a Computer Scientist.</p>
-        </section>
-
-    </main>
+        <hr>
+        <main>
+            <div class="About_me">
+                <section id="Intro">
+                    <h2>Who Am I?</h2>
+                    <!-- Source Used for picture tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
+                    <picture>
+                        <source srcset="Images/Peony_Image.JPG" media="(min-width: 900px)">
+                        <img src="Images/Power_Puff.PNG" alt="Image of Bubbles(Powerpuff Girls)" />
+                    </picture>
+                    <p>I am currently a third year student at <span class="key_point">UCSD</span>, majoring in <span
+                            class="key_point">Computer<br />
+                            Science</span>and minoring in <span class="key_point">Design</span>. I am most interested in
+                        <span class="key_point">UI/UX Design <br />
+                            and Frontend Development </span>, though I really want to learn about all types <br />
+                        of <span class="key_point">cutting-edge technology</span>. On my free time, I enjoy <span
+                            class="key_point">drawing, painting, <br />
+                            and art in general</span>.
+                    </p>
+                    <iframe src="https://www.google.com/maps/d/edit?mid=1LaLGx1WZy3mEfyoxdEWLydJYaad0k8Nf&usp=sharing"
+                        title="Peony's Life Map">
+                    </iframe>
+                    <h3 id="Fun_Facts">Some Fun Facts About Me</h3>
+                    <ul>
+                        <li>My least favorite programming language is <b>C</b></li> <br />
+                        <li>My hometown is <b>San Francisco</b></li> <br />
+                        <li>A piece of code that I live by:</li> <br />
+                        <pre>
+                        <code>
+                            while(noSuccess) { <br/>
+                                tryAgain(); <br/>
+                                if(Dead) { <br/>
+                                break; <br/>
+                                } <br/>
+                            }
+                        </code>
+                    </pre>
+                    </ul>
+                    <h3 id="Pics_Summary">A Summary of Me in Pictures</h3>
+                    <figure>
+                        <img src="Images/alien_assist.jpg" alt="Alien Assisting" />
+                        <figcaption>Fig 1: One of my dominant personalities</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Images/alien_grocery.jpg" alt="Alien Grocery Shopping" />
+                        <figcaption>Fig 2: Me doing anything in life that requires energy</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Images/alien_life.jpeg" alt="Alien Confused on Life" />
+                        <figcaption>Fig 3: My only brain cell</figcaption>
+                    </figure>
+                    <br />
+                    <strong>Disclaimer: I swear I am much more than these 3 photos!
+                        <br />
+                        Learn more about me by checking out
+                        <a href="https://www.linkedin.com/in/peony-lum/"> my LinkedIn Profile</a>
+                    </strong>
+                </section>
+                <hr>
+                <section id="Why_CS">
+                    <h2>Why Computer Science?</h2>
+                    <p>When I was a Senior in High School, I took AP Computer Science, and while I <br />
+                        was not great at programming then, I was intrigued by the concept of programming <br />
+                        and creating software. I was incredibly hesitant to choose to major in Computer <br />
+                        Science, and instead almost majored in Biology. Yet, the excitement I would get <br />
+                        when seeing my code compile and run successfully was too much to ignore. <br />
+                        <br />
+                        Ever since I have learned more in-depth concepts and practices about Computer Science <br />
+                        here at UCSD, I have developed a vague sense of what I want to do as a career. Though <br />
+                        I have grown a liking to UI/UX Design and frontend development, I still want to learn <br />
+                        more about backend development and API development. It would be a great honor to become <br />
+                        a full-stack developer eventually.
+                    </p>
+                    <aside>
+                        <strong>Imagine If I had become a Biology Major instead!</strong>
+                    </aside>
+                </section>
+                <hr>
+                <section id="Skillset">
+                    <h2>My Experience with Different Programming Languages</h2>
+                    <!--Source Used for table tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col -->
+                    <table>
+                        <caption>Programming Languages vs. Experience</caption>
+                        <colgroup>
+                            <col span="1" class="Novice">
+                            <col span="1" class="Intermediate">
+                            <col span="1" class="Advanced">
+                        </colgroup>
+                        <tr>
+                            <th scope="col">Novice</th>
+                            <th scope="col">Intermediate</th>
+                            <th scope="col">Advanced</th>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>C++</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Java</td>
+                        </tr>
+                    </table>
+                </section>
+                <hr>
+                <section id="Fav_Courses">
+                    <h2>My Least Favorite Courses I Have Taken So Far at UCSD</h2>
+                    <ol>
+                        <li>CSE 20</li>
+                        <i>&middot; This course was very difficult to me! I wasn't even sure what discrete
+                            math was at the time!
+                        </i>
+                        <li>CHEM 6A</li>
+                        <i>&middot; I am not a Chemistry major for a reason! I was very bad at this class
+                            and am so glad I only have to take one chem class!
+                        </i>
+                        <li>CSE 101</li>
+                        <i>&middot; Though this course is essential (Algorithms), it was remote and
+                            made the course even more difficult!
+                        </i>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="Site_info">
+                <em>This site was created by <b>Peony Lum</b> <b>in January, 2021</b>. If you enjoy this site and want
+                    <br />
+                    to learn more about Peony, don't forget to check out her <a
+                        href="https://www.linkedin.com/in/peony-lum/">LinkedIn Profile</a>
+                    or her <a href="https://github.com/Peonylum">GitHub account</a>!
+                </em>
+                <br />
+                <br />
+                <nav>
+                    <a href="#Welcome">
+                        <strong>Back to Top</strong>
+                    </a>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
