@@ -7,6 +7,9 @@
     border-style: solid;
     border-color: rgb(196, 87, 87);
     border-radius: 8px;
+    min-width: 70%;
+    max-width: 100%;
+    position: static;
 }
 
 #header-first:hover {
@@ -53,14 +56,25 @@ main h3 {
 }
 
 /* Styling main descendants */
+.Template {
+    display: none;
+}
+
+#Intro h2 {
+    text-align: center;
+}
+
+p {
+    display: block;
+}
+
 picture img[src="Images/Power_Puff.PNG"] {
     border: lightskyblue double 0.13cm;
     border-radius: 0.3cm;
-    margin-left: 30%;
+    margin-left: 37%;
 }
 
 picture + p {
-    margin-right: 12vw;
     text-align: center;
 }
 
@@ -80,8 +94,13 @@ pre {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+strong.Disclaimer {
+    height: 2vh;
+    width: 15vw;
 }
 
 h3 + figure {
@@ -94,9 +113,8 @@ figure ~ video {
     box-shadow: 10px 10px 10px -5px #044566;
 }
 
-strong.Disclaimer {
-    height: 2vh;
-    width: 15vw;
+.Shapes {
+    display: none;
 }
 
 /* aside CSS source used: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside */
@@ -108,14 +126,33 @@ section > aside {
     box-shadow: inset 5px 0 5px -5px #044566;
     font-style: italic;
     color: #29627e;
+    display: block;
 }
 
+/* Styling Table */
 h2 + table {
-    margin-left: 30%;
+    margin: 0% 37% 0% 37%;
 }
 
 * table {
     color: seagreen;
+}
+
+table th {
+    background-color: rgb(160, 168, 177);
+}
+
+table tr {
+    background-color: burlywood;
+}
+
+table td {
+    border: burlywood solid 3px;
+}
+
+table td, th{
+    padding: 5px;
+    text-align: center;
 }
 
 /* Styling Footer */
@@ -134,4 +171,24 @@ div.Form_Quiz {
     margin-right: auto;
     border: burlywood solid 3pt;
     border-radius: 8pt;
+}
+
+/* media Query */
+@media screen and (max-width: 800px) {
+    * {
+        background-color: lightcoral;
+    }
+
+    #header-first {
+        background-color: lightcoral;
+    }
+
+    #header-first:hover {
+        background-color: lightcoral;
+        color:  rgba(81, 42, 255, 0.5);
+        border-color: blue;
+        border-width: 6px;
+        border-style: dotted;
+        text-decoration: underline dotted green;
+    }
 }
