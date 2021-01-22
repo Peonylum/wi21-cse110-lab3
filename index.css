@@ -56,10 +56,6 @@ main h3 {
 }
 
 /* Styling main descendants */
-.Template {
-    display: none;
-}
-
 #Intro h2 {
     text-align: center;
 }
