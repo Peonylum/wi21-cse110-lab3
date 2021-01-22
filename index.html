@@ -23,6 +23,7 @@
             justify-content: space-around;
             font-family: 'Amatic SC', cursive;
             font-size: 200%;
+            position: relative;
         }
     </style>
 </head>
@@ -49,6 +50,17 @@
     </header>
     <hr>
     <main>
+        <div class="Template">
+            <h2>Before We Get Started...</h2>
+            <button type="button">Press Me if You're Ready to Learn About Me!</button>
+            <button type="button">Press Me if You'd Rather <b>NOT</b> Learn About Me!</button>
+            <br />
+            <template>
+                <strong>WHY WOULD YOU NOT WANT TO LEARN ABOUT ME?!</strong>
+                <br />
+                <img src="Images/Angry_Tenzin.JPG" alt="Angry Tenzin" />
+            </template>
+        </div>
         <section id="Intro">
             <h2>Who Am I?</h2>
             <!-- Source Used for picture tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
@@ -126,15 +138,17 @@
                     <source src="Video/Harry_S.mp4" type="video/mp4">
                     Sorry, it looks like your browser will not allow you to see Harry Styles!
                 </video>
-                <h3>A Random Canvas that depicts the blankness in my mind</h3>
-                <canvas width="250" height="250">
-                    Sorry, the canvas cannot be displayed!
-                </canvas>
-                <h3>One of My Favorite Shapes In One of My Favorite Colors</h3>
-                <!-- Source Used for svg tag: https://www.w3schools.com/html/html5_svg.asp -->
-                <svg width="250" height="250">
-                    <circle cx="125" cy="125" r="75" fill="#B5D3E7" />
-                </svg>
+                <div class="Shapes">
+                    <h3>A Random Canvas that depicts the blankness in my mind</h3>
+                    <canvas width="250" height="250">
+                        Sorry, the canvas cannot be displayed!
+                    </canvas>
+                    <h3>One of My Favorite Shapes In One of My Favorite Colors</h3>
+                    <!-- Source Used for svg tag: https://www.w3schools.com/html/html5_svg.asp -->
+                    <svg width="250" height="250">
+                        <circle cx="125" cy="125" r="75" fill="#B5D3E7" />
+                    </svg>
+                </div>
             </div>
         </section>
         <hr>
@@ -153,7 +167,7 @@
             </p>
             <br />
             <details>
-                <summary>My CS Adventure in College</summary>
+                <summary style="color:lightseagreen;">My CS Adventure in College</summary>
                 Ever since I have learned more in-depth concepts and practices about Computer Science <br />
                 here at UCSD, I have developed a vague sense of what I want to do as a career. Though <br />
                 I have grown a liking to UI/UX Design and frontend development, I still want to learn <br />
@@ -337,7 +351,7 @@
         <br />
         <br />
         <nav>
-            <a href="#Welcome">
+            <a href="#header-first">
                 <strong>Back to Top</strong>
             </a>
         </nav>
