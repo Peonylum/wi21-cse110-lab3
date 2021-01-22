@@ -1,29 +1,137 @@
+/* Styling header*/
 #header-first{
     text-align: center;
     background-color: #bedce9;
-    padding: 2px;
-    border: rgb(196, 87, 87) solid 3px;
+    padding: 0.15in 0.05in 0.15in 0.05in;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(196, 87, 87);
     border-radius: 8px;
 }
 
 #header-first:hover {
     background-color: #077B88;
     color:  rgba(255,152,42,0.5);
-    border-color: #ac3187;
+    border-color: purple;
+    border-width: 6px;
+    border-style: dotted;
+    text-decoration: underline dotted gold;
 }
 
+/*Styling span and bold */
+span, b, em {
+    text-decoration: underline double;
+    color: crimson;
+}
+
+/* Styling link */
 a:link {
-    color: #077b88;
+    color: #077;
 }
 
 a:visited {
-    color: #c79bb6;
+    color: #c79;
 }
 
 a:hover {
-    color: #fb9f8b;
+    color: #faa;
 }
 
 a:active {
     color: #ff7206;
+}
+
+/* Styling all headers within main */
+main h2 {
+    text-decoration: underline double goldenrod;
+    color: hsl(257, 100%, 29%);
+}
+
+main h3 {
+    text-decoration: underline dotted green;
+    color: hsla(240, 86%, 44%, 0.45);
+}
+
+/* Styling main descendants */
+picture img[src="Images/Power_Puff.PNG"] {
+    border: lightskyblue double 0.13cm;
+    border-radius: 0.3cm;
+    margin-left: 30%;
+}
+
+picture + p {
+    margin-right: 12vw;
+    text-align: center;
+}
+
+iframe {
+    border: lightcoral solid 0.3cm;
+    border-radius: 0.3cm;
+}
+
+pre {
+    background-color: #044566;
+    color: white;
+    border: palegoldenrod double 8pt;
+    border-radius: 8pt;
+}
+
+.Pic_Summary {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3 + figure {
+    color: darkseagreen;
+}
+
+figure ~ video {
+    border: darkslateblue solid 0.08cm;
+    border-radius: 0.3cm;
+    box-shadow: 10px 10px 10px -5px #044566;
+}
+
+strong.Disclaimer {
+    height: 2vh;
+    width: 15vw;
+}
+
+/* aside CSS source used: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside */
+section > aside {
+    width: 30%;
+    height: 50%;
+    padding: 0rem .7rem 0rem .7rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #044566;
+    font-style: italic;
+    color: #29627e;
+}
+
+h2 + table {
+    margin-left: 30%;
+}
+
+* table {
+    color: seagreen;
+}
+
+/* Styling Footer */
+footer h2, legend {
+    color: lemonchiffon;
+}
+div.Form_Quiz {
+    background-color: rgb(160, 204, 204);
+    padding-left: 2vw; 
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 5pt;
+    margin-bottom: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    border: burlywood solid 3pt;
+    border-radius: 8pt;
 }
