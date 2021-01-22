@@ -1,36 +1,25 @@
-# Meeting Name - Date
+# Standup - Date
 Start Time & Place: <br/>
 End Time: <br/>
-Attendance: <br/>
-Speaker: <br/>
-Note-taker: <br/>
-Agenda: <br/>
-- item #1
-- item #2
-- item #3
+Members Absent: <br/>
+
 ---
-## Notes on item #1
-- Note #1
-- Note #2
-- Note #3
+## Member #1 Name
+- What they did yesterday
+- What they will do today
+- Roadblocks
 
-## Notes on item #2
-- Note #1
-- Note #2
-- Note #3
+## Member #2 Name
+- What they did yesterday
+- What they will do today
+- Roadblocks
 
-## Notes on item #3
-- Note #1
-- Note #2
-- Note #3
+## Member #3 Name
+- What they did yesterday
+- What they will do today
+- Roadblocks
 ---
-**Completed Tasks** 
-- Task #1
-- Task #2
-- Task #3
-
-**Items to do before Next Meeting**
-- Item #1
-- Item #2
-- Item #3
+**Additional Comments**
+- Comment #1
+- Comment #2
 
