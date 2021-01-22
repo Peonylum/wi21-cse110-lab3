@@ -1,4 +1,4 @@
-# Meeting Name Date
+# Meeting Name - Date
 Start Time & Place: <br/>
 End Time: <br/>
 Attendance: <br/>
@@ -8,7 +8,7 @@ Agenda: <br/>
 - item #1
 - item #2
 - item #3
-
+---
 ## Notes on item #1
 - Note #1
 - Note #2
@@ -23,7 +23,7 @@ Agenda: <br/>
 - Note #1
 - Note #2
 - Note #3
-
+---
 **Completed Tasks** 
 - Task #1
 - Task #2
