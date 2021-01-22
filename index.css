@@ -1,0 +1,29 @@
+#header-first{
+    text-align: center;
+    background-color: #bedce9;
+    padding: 2px;
+    border: rgb(196, 87, 87) solid 3px;
+    border-radius: 8px;
+}
+
+#header-first:hover {
+    background-color: #077B88;
+    color:  rgba(255,152,42,0.5);
+    border-color: #ac3187;
+}
+
+a:link {
+    color: #077b88;
+}
+
+a:visited {
+    color: #c79bb6;
+}
+
+a:hover {
+    color: #fb9f8b;
+}
+
+a:active {
+    color: #ff7206;
+}

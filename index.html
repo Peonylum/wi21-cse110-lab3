@@ -9,15 +9,31 @@
     </title>
     <!-- Source Used for meta tag: https://www.w3schools.com/tags/tag_meta.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="blankFile.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <!-- Embed Third Party Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9eff4;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 200%;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1 id="Welcome">Welcome to Peony Lum's User Page</h1>
-        <p>ucsd student &middot; computer science &middot; ui/ux design <br />
-            Contact Me At: pslum@ucsd.edu
-        </p>
+        <div id="header-first">
+            <h1 id="Welcome" style="color: #c06c84; font-size: 8vmin;">Welcome to Peony Lum's User Page</h1>
+            <p style="font-size: 5vmin;">ucsd student &middot; computer science &middot; ui/ux design <br />
+                Contact Me At: pslum@ucsd.edu
+            </p>
+        </div>
         <hr>
         <nav>
             <strong>Section Breakdown</strong>
@@ -32,15 +48,6 @@
     </header>
     <hr>
     <main>
-        <h2>Before We Get Started...</h2>
-        <button type="button">Press Me if You're Ready to Learn About Me!</button>
-        <button type="button">Press Me if You'd Rather <b>NOT</b> Learn About Me!</button>
-        <br />
-        <template>
-            <strong>WHY WOULD YOU NOT WANT TO LEARN ABOUT ME?!</strong>
-            <br />
-            <img src="Images/Angry_Tenzin.JPG" alt="Angry Tenzin" />
-        </template>
         <section id="Intro">
             <h2>Who Am I?</h2>
             <!-- Source Used for picture tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture -->
