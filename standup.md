@@ -1,4 +1,4 @@
-# Meeting Name Date
+# Meeting Name - Date
 Start Time & Place: <br/>
 End Time: <br/>
 Attendance: <br/>
